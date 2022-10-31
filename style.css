@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #000;
+  background: rgb(238, 238, 238);
+}
+body .wrapper {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+body .wrapper .top-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  height: 9vh;
+  position: fixed;
+  top: 0;
+  left: 5%;
+  right: 2%;
+  background: rgb(238, 238, 238);
+}
+@media all and (max-width: 725px) {
+  body .wrapper .top-header {
+    width: 100%;
+    left: 0;
+  }
+}
+@media all and (max-width: 620px) {
+  body .wrapper .top-header {
+    flex-direction: column;
+    height: 15vh;
+  }
+}
+@media all and (max-width: 620px) {
+  body .wrapper .top-header .header-top-item {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+}
+body .wrapper .top-header .header-top-item:first-child {
+  width: 50%;
+}
+@media all and (max-width: 620px) {
+  body .wrapper .top-header .header-top-item:first-child {
+    margin-top: 1vh;
+    width: 100%;
+  }
+}
+body .wrapper .top-header .header-top-item img {
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+}
+body .wrapper .top-header .header-top-item ul {
+  width: 100%;
+  text-align: center;
+}
+@media all and (max-width: 620px) {
+  body .wrapper .top-header .header-top-item ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+body .wrapper .top-header .header-top-item ul li {
+  display: inline;
+  margin: 0 5vw 0 0;
+}
+@media all and (max-width: 620px) {
+  body .wrapper .top-header .header-top-item ul li {
+    margin: 0;
+  }
+}
+body .wrapper .top-header .header-top-item ul li a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+body .wrapper main .user-email-container {
+  margin-top: 10vh;
+  width: 100%;
+}
+@media all and (max-width: 620px) {
+  body .wrapper main .user-email-container {
+    margin-top: 15vh;
+  }
+}
+body .wrapper main .user-email-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 20vh;
+}
+body .wrapper main .user-email-container form h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+body .wrapper main .user-email-container form input {
+  padding: 5px;
+  width: 30%;
+}
+@media all and (max-width: 620px) {
+  body .wrapper main .user-email-container form input {
+    width: 50%;
+  }
+}
+body .wrapper main .user-email-container form button {
+  width: auto;
+  height: 20%;
+  background: rgb(255, 165, 0);
+  border: none;
+  font-weight: 900;
+}
+body .wrapper main .advantages {
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50vh;
+}
+@media all and (max-width: 620px) {
+  body .wrapper main .advantages {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+}
+body .wrapper main .advantages .advantages-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media all and (max-width: 505px) {
+  body .wrapper main .advantages .advantages-item {
+    flex-direction: column;
+    margin: 0 0 5vw 0;
+  }
+}
+body .wrapper main .advantages .advantages-item .icon-container {
+  width: 20%;
+  text-align: center;
+}
+@media all and (max-width: 620px) {
+  body .wrapper main .advantages .advantages-item .icon-container {
+    text-align: start;
+    margin-bottom: 2vw;
+  }
+}
+body .wrapper main .advantages .advantages-item .icon-container i {
+  font-size: 48px;
+  color: #FF8C00;
+}
+body .wrapper main .advantages .advantages-item h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+body .wrapper main .advantages .advantages-item p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+body .wrapper main .advantages .advantages-item div {
+  width: 80%;
+}/*# sourceMappingURL=style.css.map */
